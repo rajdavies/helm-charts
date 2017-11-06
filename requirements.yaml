@@ -1,0 +1,7 @@
+dependencies:
+  - name: jenkins
+    version: <jenkins-tag>
+    repository: http://monocular.helm.test.fabric8.io/charts/
+  - name: sonatype-nexus
+    version: <sonatype-nexus-tag>
+    repository: http://monocular.helm.test.fabric8.io/charts
