@@ -1,7 +1,13 @@
 dependencies:
+  # - name: jenkins
+  #   version: 0.9.0
+  #   repository: https://kubernetes-charts.storage.googleapis.com
   - name: jenkins
     version: 0.9.0
-    repository: https://chartmuseum.helm.test.fabric8.io
+    repository: https://chartmuseum.helm.test.fabric8.io  
   - name: sonatype-nexus
     version: 0.1.1
-    repository: https://chartmuseum.helm.test.fabric8.io
+    repository: https://kubernetes-charts.storage.googleapis.com
+  - name: pipelines
+    version: 0.0.1
+    repository: file://pipelines
