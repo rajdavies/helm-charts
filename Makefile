@@ -22,4 +22,4 @@ release:
 
 setup:
 	minikube addons enable ingress
-	brew install helm
+	brew install kubernetes-helm
