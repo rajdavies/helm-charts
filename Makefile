@@ -5,6 +5,7 @@ build:
 
 install:
 	helm dependency build
+	helm init
 	helm install . --name fabric8
 	watch kubectl get pods
 
