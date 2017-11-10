@@ -26,7 +26,7 @@ jenkins:
   # Master Service annotations
     ServiceAnnotations:
       #   service.beta.kubernetes.io/aws-load-balancer-backend-protocol: https
-      expose: "true"
+      fabric8.io/expose: "true"
   # Used to create Ingress record (should used with ServiceType: ClusterIP)
   # HostName: jenkins.cluster.local
   # NodePort: <to set explicitly, choose port between 30000-32767
@@ -44,12 +44,12 @@ jenkins:
   #   -Dcom.sun.management.jmxremote.ssl=false
   # JMXPort: 4000
   # List of plugins to be install during Jenkins master start
-    # InstallPlugins:
-    #     - kubernetes:0.11
-    #     - workflow-aggregator:2.5
-    #     - workflow-job:2.13
-    #     - credentials-binding:1.12
-    #     - git:3.4.0
+    InstallPlugins:
+        # - kubernetes:0.11
+        # - workflow-aggregator:2.5
+        # - workflow-job:2.13
+        # - credentials-binding:1.12
+        - git:3.4.0
   # Used to approve a list of groovy functions in pipelines used the script-security plugin. Can be viewed under /scriptApproval
     # ScriptApproval:
     #   - "method groovy.json.JsonSlurperClassic parseText java.lang.String"

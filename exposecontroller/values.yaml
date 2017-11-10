@@ -1,0 +1,12 @@
+Exposecontroller:
+  Name: exposecontroller
+  Image: "fabric8/exposecontroller"
+  ImageTag: "SNAPSHOT-PR-90-3"
+  Component: "exposecontroller"
+  APIServer: ""
+  NodeIp: ""
+  Exposer: ""
+  Domain: ""
+  WatchCurrentNamespace: "true"
+  HTTP: "true"
+  TLSACME: ""
